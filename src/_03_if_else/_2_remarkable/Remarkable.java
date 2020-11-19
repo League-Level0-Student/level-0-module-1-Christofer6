@@ -8,11 +8,21 @@ public class Remarkable {
 public static void main(String[] args) {
 
 		// 1. Save something remarkable about each person in a variable.
-
-		// 2. Ask the user to enter a name. Store their answer in a variable.
-
+String Johndoe= "Helps the community out";
+String Janedoe= "Gives food to the homeless";		
+// 2. Ask the user to enter a name. Store their answer in a variable.
+String input = JOptionPane.showInputDialog("Enter someones Name");
 		// 3. In a pop-up, tell the user what is remarkable about that person. 
-
+if (input.equalsIgnoreCase("John Doe")){
+	
+		JOptionPane.showMessageDialog(null, Johndoe);	
+		
+		
+	}
+else if (input.equalsIgnoreCase("Jane Doe")){	
+	
+	JOptionPane.showMessageDialog(null, Janedoe);
+}
 	}
 }
 
